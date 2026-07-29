@@ -1,5 +1,19 @@
 # AGENTS.md
 
+## Workflow
+
+Szczegółowy proces pracy znajduje się w:
+
+docs/agents-workflow.md
+
+Używaj go jako rozszerzenia procesu przy:
+- dużych zadaniach,
+- zmianach wieloetapowych,
+- pracach obejmujących wiele modułów,
+- zmianach architektury.
+
+---
+
 ## Priorytety
 
 1. Poprawność ponad szybkość.
@@ -48,6 +62,21 @@ Jeżeli musisz rozszerzyć zakres analizy, wyjaśnij dlaczego.
 Nie uruchamiaj narzędzi tylko dlatego, że są dostępne.
 
 Każda operacja powinna dostarczyć informacji potrzebnej do rozwiązania problemu.
+
+---
+
+## Skills
+
+Przed rozpoczęciem pracy oceń, czy zadanie pasuje do któregoś ze skills.
+
+Użyj odpowiedniego skilla dla:
+- bugfix,
+- feature,
+- refactor,
+- large-change,
+- performance,
+- security review,
+- dependency upgrade.
 
 ---
 
