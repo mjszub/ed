@@ -2,94 +2,82 @@
 
 ## Priorytety
 
-Pracuj według kolejności:
-
-1. Poprawność.
+1. Poprawność ponad szybkość.
 2. Minimalny zakres zmian.
-3. Zachowanie istniejącej architektury.
-4. Efektywne użycie czasu i narzędzi.
+3. Wykorzystuj istniejący kod przed tworzeniem nowego.
+4. Zachowuj istniejącą architekturę.
+5. Efektywnie używaj czasu i narzędzi.
 
 ---
 
-## Sposób pracy
+## Zanim zmienisz kod
 
-Każde zadanie wykonuj etapami:
+- Zrozum problem.
+- Znajdź odpowiedzialny obszar.
+- Sprawdź istniejące wzorce.
+- Przygotuj plan.
 
-1. Analiza:
-   - znajdź właściwy obszar kodu,
-   - zrozum istniejący przepływ,
-   - nie zmieniaj jeszcze kodu.
-
-2. Plan:
-   - podziel pracę na małe kroki,
-   - wskaż pliki i komponenty, które będą zmieniane.
-
-3. Implementacja:
-   - wykonuj jeden krok naraz,
-   - nie dodawaj zmian niezwiązanych z zadaniem.
-
-4. Walidacja:
-   - uruchamiaj najpierw najtańsze i najbardziej lokalne testy,
-   - pełny build/pipeline tylko gdy jest potrzebny.
+Nie implementuj rozwiązania zanim nie rozumiesz kontekstu.
 
 ---
 
-## Kontrola zakresu
+## Podczas implementacji
 
-Nie próbuj analizować całego repozytorium.
+- Wykonuj małe kroki.
+- Zmieniaj tylko wymagany zakres.
+- Nie wykonuj refaktoringu przy okazji.
+- Nie twórz nowych abstrakcji bez potrzeby.
+- Nie zmieniaj publicznych interfejsów bez uzasadnienia.
+
+---
+
+## Kontrola kontekstu
+
+Nie analizuj całego repozytorium bez potrzeby.
 
 Najpierw znajdź najmniejszy obszar odpowiedzialny za problem.
 
 Nie czytaj kodu "na zapas".
 
-Jeżeli potrzebujesz rozszerzyć analizę poza obecny obszar, wyjaśnij dlaczego.
+Jeżeli musisz rozszerzyć zakres analizy, wyjaśnij dlaczego.
 
 ---
 
-## Minimalne zmiany
+## Narzędzia
 
-Preferuj:
+Nie uruchamiaj narzędzi tylko dlatego, że są dostępne.
 
-- istniejący kod,
-- istniejące wzorce,
-- lokalne poprawki.
-
-Nie wykonuj refaktoringu przy okazji.
-
-Nie twórz nowych abstrakcji bez potrzeby.
-
-Nie zmieniaj publicznych interfejsów bez uzasadnienia.
+Każda operacja powinna dostarczyć informacji potrzebnej do rozwiązania problemu.
 
 ---
 
 ## Kosztowne operacje
 
-Nie wykonuj automatycznie:
+Nie uruchamiaj automatycznie:
 
 - pełnego builda,
-- pełnego zestawu testów,
-- analizy całego repozytorium.
+- pełnych testów,
+- długich pipeline'ów.
 
 Najpierw oceń, czy wynik wniesie nową informację.
 
 ---
 
-## Punkty zatrzymania
+## Zatrzymanie
 
-Zatrzymaj się i przedstaw plan, jeśli:
+Poproś użytkownika o decyzję, gdy:
 
-- zmiany obejmują więcej niż 15 plików,
-- dotyczą więcej niż 2 modułów,
-- zmieniają architekturę,
-- zmieniają kontrakty między komponentami.
+- zmiana obejmuje wiele modułów,
+- zmienia architekturę,
+- wymaga dużej migracji,
+- wymagania są niejasne.
 
 ---
 
-## Review
+## Po zmianach
 
-Po zakończeniu sprawdź:
+Sprawdź:
 
 - Czy rozwiązanie jest minimalne?
 - Czy istnieje prostsza droga?
 - Jakie są ryzyka?
-- Czy kolejny krok wymaga decyzji użytkownika?
