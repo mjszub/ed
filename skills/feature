@@ -1,0 +1,20 @@
+# Feature Skill
+
+## Cel
+
+Dodanie nowej funkcjonalności.
+
+## Proces
+
+1. Zrozum istniejące rozwiązanie.
+2. Określ minimalny zakres.
+3. Przygotuj plan.
+4. Implementuj etapami.
+5. Dodaj testy.
+6. Zweryfikuj integrację.
+
+## Zasady
+
+- Preferuj istniejące komponenty.
+- Nie projektuj systemu od nowa.
+- Kontroluj wzrost zakresu.
